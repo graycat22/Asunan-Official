@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: PixelMplus12;
+	src: url("/PixelMplus12-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: NIKUKYU;
+    src: url("/NIKUKYU.ttf") format("truetype");
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#loading {
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s;
+  background-color: purple;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.spinner {
+  width: 100px;
+  height: 100px;
+  margin: 200px auto;
+  background-color: #fff;
+  border-radius: 100%;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@keyframes sk-scaleout {
+  0% {
+    transform: scale(0);
+  } 100% {
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    user-select: none;
+    -webkit-user-drag: none;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+}
+
+#wrapper {
+    max-width: 100%;
+}
+
+#ashitamochi {
+    float: left;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    z-index: 2;
+}
+
+.nav-btn {
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 19px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.nav-btn div {
+    width: 40px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #000;
+    margin-top: 10px;
+    
+}
+
+.nav-btn:active {
+    transform: translate3d(2px, 1px, 4px);
+}
+
+a {
+    color: black;
+}
+
+a, ul, li {
+    margin: 0px;
+    padding: 0px;
+}
+
+.global_nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: auto;
+    margin: auto;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.global_nav ul {
+    width: 80%;
+    height: auto;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    margin: auto;
+}
+
+.global_nav ul li {
+    text-align: center;
+    align-self: auto;
+    flex: 1;
+    height: 44px;
+    margin: 25px 0 14px;
+}
+
+.global_nav ul li:hover {
+    transform: translateY(3px);
+    color: #a9a9a9;
+    transition: color .14s linear;
+}
+
+.global_nav ul li a {
+    text-decoration: none;
+    padding: 10px 0;
+    box-sizing: border-box;
+    font-family: "NIKUKYU";
+}
+
+.js_nav:hover {
+    border-bottom: 3px solid #8b008b;
+    border-radius: 2px;
+}
+
+#asunan-sano {
+    height: 500px;
+    margin-left: 60px;
+    max-width: 100%;
+}
+
+#asunan {
+    margin: 40px auto;
+    font-size: 40px;
+    color: #983749;
+    width: calc(100% – 100px);
+    font-family: "NIKUKYU";
+}
+
+.bunner1 {
+  margin-top: 10px;
+    color: #fff;
+    background-color: #e2a9f3;
+    text-align: center;
+    font-size: 80px;
+    font-family: "NIKUKYU";
+}
+
+.asunan-main {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 25px;
+  position: relative;
+  overflow: hidden;
+}
+
+.asunan-disco-wrap {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.asunan-disco-item {
+  box-sizing: border-box;
+  width: calc(100% / 3);
+  max-width: 270px;
+  text-align: center;
+  margin: 0 auto 80px;
+}
+
+.asunan-disco-inner {
+  padding: 10px;
+}
+
+.asunan-disco-img {
+    line-height: 0;
+    font-size: 0;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#asunan-daylight, #asunan-twilight {
+  display: none;
+}
+
+.asunan-music-list {
+  text-align: left;
+  font-family: serif;
+}
+
+.asunan-music-list span {
+  margin-left: 15px;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+#top-btn {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+
+#top-btn:hover {
+    cursor: pointer;
+}
+
+#top-btn-text {
+    font-size: 10;
+    position: fixed;
+    bottom: 10px;
+    right: 40px;
+}

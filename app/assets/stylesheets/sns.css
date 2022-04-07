@@ -1,0 +1,92 @@
+.nav-btn {
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 19px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.nav-btn div {
+    width: 40px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #000;
+    margin-top: 10px;
+    
+}
+
+.nav-btn:active {
+    transform: translate3d(2px, 1px, 4px);
+}
+
+a {
+    color: black;
+}
+
+a, ul, li {
+    margin: 0px;
+    padding: 0px;
+}
+
+.local_nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: auto;
+    margin: auto;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.local_nav ul {
+    width: 80%;
+    height: auto;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    margin: auto;
+}
+
+.local_nav ul li {
+    text-align: center;
+    align-self: auto;
+    flex: 1;
+    height: 44px;
+    margin: 25px 0 14px;
+}
+
+.local_nav ul li:hover {
+    transform: translateY(3px);
+    color: #a9a9a9;
+    transition: color .14s linear;
+}
+
+.local_nav ul li a {
+    text-decoration: none;
+    padding: 10px 0;
+    box-sizing: border-box;
+    font-family: "NIKUKYU";
+}
+
+
+/*.local_nav もindex.cssいれる*/
+
+
+.delete-btn {
+    margin: -.5rem 0 .5rem;
+}
+
+.user-name-- {
+    font-size: 1rem;
+    font-family: "PixelMplus12";
+}
+
+.txt-muted {
+    margin-left: .5rem;
+    font-size: .8rem;
+}

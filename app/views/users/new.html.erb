@@ -1,0 +1,34 @@
+<div>
+  <h2>あすなんPREMIUM</h2>
+</div>
+
+<div>
+  <%= form_with(model: @user) do |f| %>
+  
+    <div class="input--">
+      <%= f.label :name, "ペンネーム" %>
+      <%= f.text_field :name %>
+    </div>
+  
+    <div class="input--">
+      <%= f.label :email, "メールアドレス" %>
+      <%= f.email_field :email %>
+    </div>
+    
+    <div class="input--">
+      <%= f.label :password, "パスワード" %>
+      <%= f.password_field :password %>
+    </div>
+    
+    <div class="input--">
+      <%= f.label :password_confirmation, 'パスワード確認用' %>
+      <%= f.password_field :password_confirmation %>
+    </div>
+    
+    <%= check_box_tag :check %>
+    <%= label_tag :check, "アカウント情報を記憶する" %>
+    
+    <%= f.submit '登録', class: 'login-btn' %>
+  <% end %>
+  
+</div>

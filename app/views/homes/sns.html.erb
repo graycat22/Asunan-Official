@@ -1,0 +1,23 @@
+
+<%= render "layouts/navbar" %>
+
+<div class="container sns-wrap">
+  <div class="row">
+    
+    <div class="col-sm-8">
+
+      <%= render 'microposts/microposts', microposts: @microposts %>
+
+    </div>
+      
+    <aside class="col-sm-4">
+      <%= form_with(model: @micropost) do |f| %>
+        <div class="mb-3">
+          <%= f.text_area :content, class: 'form-control', rows: 5 %>
+        </div>
+        <%= f.submit '投稿', class: 'btn btn-primary w-100' %>
+      <% end %>
+    </aside>
+    
+  </div>
+</div>

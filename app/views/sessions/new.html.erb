@@ -1,0 +1,24 @@
+<div>
+  <h2>あすなんPREMIUMにログイン</h2>
+</div>
+
+<div>
+  <%= form_with(url: login_path, scope: :session) do |f| %>
+  
+    <div class="input--">
+      <%= f.label :email, "メールアドレス" %>
+      <%= f.email_field :email %>
+    </div>
+    
+    <div class="input--">
+      <%= f.label :password, "パスワード" %>
+      <%= f.password_field :password %>
+    </div>
+    
+    <%= check_box_tag :check %>
+    <%= label_tag :check, "アカウント情報を記憶する" %>
+    
+    <%= f.submit 'ログイン', class: 'login-btn' %>
+    <% end %>
+  
+</div>
